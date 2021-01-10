@@ -1,0 +1,50 @@
+<% layout('./layouts/boilerplat') %>
+
+
+    <div class="row d-flex justify-content-center aligen-items-center">
+        <div class="col-md-6 col-xl-4">
+            <div class="card shadow mb-5">
+                <img class="card-img-top"
+                    src="https://images.unsplash.com/photo-1445308394109-4ec2920981b1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=753&q=80"
+                    alt="">
+                <div class="p-3">
+                    <h1>Register Form</h1>
+                    <form action="/register" method="POST" class="validation-form" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label" for="username">Username</label>
+                            <input class="form-control" autofocus type="text" name="username" id="username" required>
+                            <div class="valid-feedback">
+                                Looks Good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please type a valid Username.
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="password">Password</label>
+                                <input class="form-control" type="password" name="password" id="password" required>
+                                <div class="valid-feedback">
+                                    Looks Good!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please type a valid password.
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input class="form-control" type="email" name="email" id="email" required>
+                                    <div class="valid-feedback">
+                                        Looks Good!
+                                    </div>
+                                    <div class=" invalid-feedback">
+                                        Please type a valid Email.
+                                    </div>
+                                </div>
+                            </div>         
+                        </div>
+                        <div class="d-grid">
+                       <button class="btn btn-success mt-3">Register</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
